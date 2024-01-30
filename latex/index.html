@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+    <script src="https://unpkg.com/markdown-it-amsmath"></script>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const katexOptions = { throwOnError: true, displayMode: true }
+      const renderer = math => katex.renderToString(math, katexOptions)
+      const mdit = window.markdownit().use(window.markdownitAmsmath, { renderer })
+      const text = mdit.render("$|1 \rangle$ ")
+      document.getElementById("demo").innerHTML = text
+    </script>
+    <textarea id="demo"></textarea>
+
+
+  </body>
+</html>

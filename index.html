@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!--主题-->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
+  <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">-->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
+  <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css">-->
+  <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css">-->
+
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
+  <!-- 侧边栏logo样式 -->
+  <style>
+    .app-name-link > img{
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- <nav>
+    <a href="#/">EN</a>
+    <a href="#/">中文</a>
+  </nav> -->
+  <div id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      // logo和name和图标二选一
+      name: '🏡🏡🏡',
+      // 侧边栏顶部标题或logo链接
+      nameLink: "https://dgdg996.top",
+      homepage: 'README.md',
+      // 侧边栏目录作为内容标题
+      autoHeader: true,
+      // 自定义侧边栏最大层级
+      subMaxLevel: 2,
+      // url变化自动滚动到顶部
+      auto2top: true,
+      // 内容距离顶部的高度
+      topMargin: 10,
+      // 右上角github小部件链接
+      // repo: 'https://dgdg996.top',
+      // 加载侧边栏
+      loadSidebar: true,
+      coverpage: true,
+      loadNavbar: true,
+
+      externalLinkTarget: '_blank',
+      themeColor: '#2faaff',
+      // 评论插件
+      // disqus: 'shortname',
+
+      //search: 'auto',
+      //search : [
+      //  '/',
+      //  'md/network-security.md',
+      //  'md/docker-compose.md'
+      //],
+      // 路由映射，固定根目录的文件
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      },
+      search: {
+        maxAge: 86400000,
+        paths: "auto",
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+        depth: 6,
+        hideOtherSidebarContent: false,
+        namespace: 'dgdg996',
+      },
+      // 页面右侧toc
+      toc: {
+        tocMaxLevel: 2,
+        target: "h2, h3, h4, h5, h6",
+      },
+      // 底部导航
+      pagination: {
+        previousText: "Pre",
+        nextText: "Next",
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      footer: {
+        copy: '©️Dgdg996-2046',
+        auth: 'Dgdg',
+        pre: '<hr>',
+        style:'text-align: center;'
+      },
+      remoteMarkdown: {
+        tag: 'md',
+      },
+      // edit-on-github
+      //plugins: [
+        // 末尾的/是必要的
+      //  EditOnGithubPlugin.create('https://dgdg996.top')
+      //],
+    }
+  </script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!--  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>-->
+
+  <!-- 评论
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '2e9677843c4746472164',
+      clientSecret: '7af6573bbab3cd4a94fd27dbf178d6c6c119a025',
+      repo: 'docsifyGuide',
+      owner: 'pycrab',
+      admin: ['pycrab'],
+      distractionFreeMode: true
+    })
+  </script> -->
+  <!-- 代码高亮  https://cdn.jsdelivr.net/npm/prismjs@1/components/ -->
+
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cmake.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-csharp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-docker.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
+  <!-- 多tab支持 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+  <!-- 页面右侧 TOC -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script>
+  <!-- 侧边栏目录折叠 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 底部 上一页下一页 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script> -->
+  <script src="https://unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+  <script src="https://unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
+
+</body>
+</html>

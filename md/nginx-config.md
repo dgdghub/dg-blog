@@ -1,0 +1,44 @@
+# 案例：Nginx配置htts且80自动转发到443
+```
+server {
+    listen 443 ssl;
+    server_name  xxx.com www.xxx.top;
+
+    # ssl证书地址
+    ssl_certificate      /xxx/xxx.pem;
+    ssl_certificate_key  /xxx/xxx.key;
+
+    # ssl验证相关配置
+    ssl_session_timeout  5m;    #缓存有效期
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;    #加密算法
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;    #安全链接可选的加密协议
+    ssl_prefer_server_ciphers on;   #使用服务器端的首选算法
+
+    location / {
+        root   html;
+        index  index.html index.htm;
+        proxy_pass http://127.0.0.1:xxxx;
+    }
+    # location /ssln {
+    #            alias /home/nginx/html/public/;
+    #            try_files $uri $uri/ /index.html;
+    #            index  index.html index.htm;
+    #    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   html;
+    }
+}
+
+server {
+  # 80端口是http正常访问的接口
+  listen 80;
+  server_name xxx.top www.xxx.top;
+  # 在这里，我做了https全加密处理，在访问http的时候自动跳转到https
+  if ($scheme != "https") {
+    rewrite ^ https://$host$request_uri permanent;
+  }
+
+}
+```
