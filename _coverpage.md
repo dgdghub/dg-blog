@@ -3,7 +3,7 @@
 
 <!-- 以下封面描述 -->
 
-# [DgdgPage](https://985188.xyz)
+# [AIAGEDU](/)
 
 > A nice website for dev
 
@@ -12,7 +12,7 @@
 - Based on configuration
 
 <!-- 以下为链接，空格分隔 -->
-[GitHub](https://github.com/dgdghub/dg-blog) [DGDG](https://985188.xyz)  [Get Started](README.md)
+[GitHub](https://github.com/dgdghub/dg-blog) [AIAGEDU](/)  [Get Started](README.md)
 
 <!-- 这个是封面背景图，不配置的话，是随机的颜色 -->
 <!-- ![](image/1.png) -->
