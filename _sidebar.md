@@ -7,3 +7,6 @@
 * Test
   * [Network](/)
   * [Security](/)
+
+* Blog
+  * [quantum](md/notebook1.md)
