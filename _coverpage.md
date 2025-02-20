@@ -3,7 +3,7 @@
 
 <!-- 以下封面描述 -->
 
-# [AIAGEDU](https://985188.xyz)
+# [BOOBHUB](https://985188.xyz)
 
 > A nice website for dev
 
